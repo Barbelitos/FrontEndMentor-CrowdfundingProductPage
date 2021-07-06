@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap");
+
+:root {
+  /* Primary */
+  --moderate-cyan: hsl(176, 50%, 47%);
+  --dark-cyan: hsl(176, 72%, 28%);
+  /* Neutral */
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 48%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+  font-size: 16px;
+}
+
+.page-header {
+  background: url(/images/image-hero-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 280px;
+}
+
+.navbar-logo {
+  padding: 1.2em;
+}
+
+.navbar-menu {
+  width: 85%;
+  position: relative;
+  margin: auto;
+  border-radius: 15px;
+  background: white;
+  z-index: 100;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.show-menu {
+  max-height: 500px;
+  transition: max-height 0.3s linear;
+}
+
+.navbar-menu li {
+  width: 100%;
+  list-style: none;
+  transition: all 0.5s;
+}
+
+.navbar-menu a {
+  display: block;
+  padding: 1.7em;
+  width: 100%;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--black);
+  transition: all 0.5s;
+}
+
+.navbar-menu hr {
+  border-top: 0.7px solid rgba(161, 163, 161, 0.2);
+  border-bottom: none;
+}
+
+.menu-toggler {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+}
+
+.menu-close {
+  position: absolute;
+  top: 1.5em;
+  right: 1.5em;
+  z-index: 10;
+  display: none;
+}
+
+.darkness {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  display: none;
+}
+
+.project-card {
+  width: 85%;
+  margin: -2.5em auto auto auto;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.project-logo {
+  margin-top: -50px;
+}
+
+.project-title {
+  width: 70%;
+  margin: 1.5em auto;
+}
+
+.project-description {
+  margin: 1.5em auto;
+  font-size: 14px;
+  line-height: 1.7em;
+  color: var(--dark-gray);
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.8em;
+  margin: 1.5em auto;
+}
+
+.back-button {
+  background: var(--moderate-cyan);
+  color: white;
+  border: none;
+  height: 56px;
+  width: 220px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 15px;
+}
