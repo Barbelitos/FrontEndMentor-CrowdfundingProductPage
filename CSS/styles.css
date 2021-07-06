@@ -18,6 +18,7 @@
 body {
   font-family: "Commissioner", sans-serif;
   font-size: 16px;
+  background: rgb(250, 249, 248);
 }
 
 .page-header {
@@ -135,4 +136,47 @@ body {
   border-radius: 30px;
   font-weight: 600;
   font-size: 15px;
+}
+
+.backers-card {
+  width: 85%;
+  margin: 1.5em auto;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.backers-number {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0.4em;
+}
+
+.backers-text {
+  font-size: 12px;
+  color: var(--dark-gray);
+}
+
+.backers-divisor {
+  width: 25%;
+  margin: 1.5em auto;
+  border: 0.2px solid rgb(184, 183, 183);
+  border-bottom: none;
+}
+
+.progress-bar {
+  background-color: rgba(243, 242, 242, 0.918);
+  width: 95%;
+  height: 12px;
+  margin: 2em auto 0.8em auto;
+  border-radius: 15px;
+}
+
+.progress {
+  background-color: var(--moderate-cyan);
+  width: 80%;
+  height: 12px;
+  border-radius: 15px;
 }
