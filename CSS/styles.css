@@ -73,6 +73,7 @@ body {
   position: absolute;
   top: 1.5em;
   right: 1.5em;
+  cursor: pointer;
 }
 
 .menu-close {
@@ -81,6 +82,7 @@ body {
   right: 1.5em;
   z-index: 10;
   display: none;
+  cursor: pointer;
 }
 
 .darkness {
@@ -179,4 +181,75 @@ body {
   width: 80%;
   height: 12px;
   border-radius: 15px;
+}
+
+.about-card {
+  width: 85%;
+  margin: 1.5em auto;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.about-text {
+  color: var(--dark-gray);
+  font-size: 14px;
+  margin-top: 1.5em;
+  line-height: 1.6em;
+}
+
+.option-card {
+  width: 95%;
+  margin: 1.5em auto;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: left;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+}
+
+.option-pledge {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 0.5em;
+  color: var(--moderate-cyan);
+}
+
+.option-text {
+  color: var(--dark-gray);
+  font-size: 13.5px;
+  line-height: 1.8em;
+  margin: 2em 0;
+}
+
+.option-days {
+  font-weight: 700;
+  font-size: 28px;
+  /* position: relative; */
+}
+
+.option-days::after {
+  content: "left";
+  color: var(--dark-gray);
+  position: relative;
+  font-size: 13px;
+  font-weight: 400;
+  bottom: 0.4em;
+  left: 0.5em;
+}
+
+.option-reward {
+  background: var(--moderate-cyan);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin-top: 1.8em;
+  height: 50px;
+  width: 150px;
+}
+
+.out-of-stock {
+  background: var(--dark-gray);
 }
