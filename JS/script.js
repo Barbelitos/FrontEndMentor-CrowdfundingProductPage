@@ -16,3 +16,22 @@ menuClose.addEventListener("click", () => {
   menuClose.style.display = "none";
   darkness.style.display = "none";
 });
+
+// Modals
+var backModal = document.getElementById("back-modal");
+var backModalOpen = document.querySelector(".back-button");
+var closeModal = document.querySelector(".close-modal");
+
+backModalOpen.onclick = () => {
+  backModal.style.display = "block";
+};
+
+closeModal.onclick = () => {
+  backModal.style.display = "none";
+};
+
+window.onclick = (event) => {
+  if (event.target == backModal) {
+    backModal.style.display = "none";
+  }
+};
