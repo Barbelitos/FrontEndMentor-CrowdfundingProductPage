@@ -302,3 +302,50 @@ body {
   display: flex;
   gap: 1em;
 }
+
+.special-radio {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  margin-right: 15px;
+  margin-top: 15px;
+}
+
+.first-special {
+  margin-top: 2px;
+}
+
+.default-radio {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.custom-radio {
+  position: absolute;
+  top: -3.5px;
+  left: -3.5px;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid rgba(221, 219, 219, 0.712);
+}
+
+.custom-radio::after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.special-radio input:checked ~ .custom-radio::after {
+  display: block;
+}
+
+.special-radio .custom-radio::after {
+  top: 4px;
+  left: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--moderate-cyan);
+}
