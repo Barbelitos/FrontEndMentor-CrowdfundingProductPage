@@ -35,3 +35,54 @@ window.onclick = (event) => {
     backModal.style.display = "none";
   }
 };
+
+/* Enter pledge */
+enterFirst = document.getElementById("enter-first");
+var enterSecond = document.getElementById("enter-second");
+var enterThird = document.getElementById("enter-third");
+
+var firstPledge = document.getElementById("first-pledge");
+var secondPledge = document.getElementById("second-pledge");
+var thirdPledge = document.getElementById("third-pledge");
+
+var radioCheck1 = document.getElementById("option-1");
+var radioCheck2 = document.getElementById("option-2");
+var radioCheck3 = document.getElementById("option-3");
+
+radioCheck1.onclick = () => {
+  firstPledge.classList.add("highlight");
+  enterFirst.classList.add("show-pledge");
+};
+
+radioCheck2.onclick = () => {
+  secondPledge.classList.add("highlight");
+  enterSecond.classList.add("show-pledge");
+};
+
+radioCheck3.onclick = () => {
+  thirdPledge.classList.add("highlight");
+  enterThird.classList.add("show-pledge");
+};
+
+document.addEventListener("click", (event) => {
+  var firstCard = firstPledge.contains(event.target);
+  var secondCard = secondPledge.contains(event.target);
+  var thirdCard = thirdPledge.contains(event.target);
+  if (!firstCard) {
+    firstPledge.classList.remove("highlight");
+    enterFirst.classList.remove("show-pledge");
+    radioCheck1.checked = false;
+  }
+
+  if (!secondCard) {
+    secondPledge.classList.remove("highlight");
+    enterSecond.classList.remove("show-pledge");
+    radioCheck2.checked = false;
+  }
+
+  if (!thirdCard) {
+    thirdPledge.classList.remove("highlight");
+    enterThird.classList.remove("show-pledge");
+    radioCheck3.checked = false;
+  }
+});

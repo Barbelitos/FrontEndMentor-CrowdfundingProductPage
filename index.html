@@ -64,7 +64,11 @@
         </p>
         <div class="card-buttons">
           <button class="back-button">Back this project</button>
-          <img src="images/icon-bookmark.svg" alt="" class="project-bookmark" />
+          <img
+            src="images/icon-bookmark.svg"
+            alt="Bookmark"
+            class="project-bookmark"
+          />
         </div>
       </div>
       <div class="backers-card">
@@ -150,14 +154,13 @@
           Want to support us in bringing Mastercraft Bamboo Monitor Riser out in
           the world?
         </p>
-        <div class="option-card">
+        <div id="first-pledge" class="option-card">
           <div class="pledge-radio">
             <label class="special-radio first-special">
               <input
                 class="default-radio"
                 id="option-1"
                 name="pledge-options"
-                value="option-1"
                 type="radio"
               />
               <span class="custom-radio"></span>
@@ -170,15 +173,24 @@
             project. As a backer, you will be signed up to receive product
             updates via email.
           </p>
+          <div id="enter-first" class="enter-pledge">
+            <hr class="pledge-divider" />
+            <p class="pledge-text">Enter your pledge</p>
+            <div class="pledge-buttons">
+              <button class="pledge-amount">
+                <span>$</span><input type="number" value="" min="0" />
+              </button>
+              <button class="pledge-continue">Continue</button>
+            </div>
+          </div>
         </div>
-        <div class="option-card">
+        <div id="second-pledge" class="option-card">
           <div class="pledge-radio">
             <label class="special-radio">
               <input
                 class="default-radio"
                 id="option-2"
                 name="pledge-options"
-                value="option-2"
                 type="radio"
               />
               <span class="custom-radio"></span>
@@ -194,15 +206,24 @@
             Backer member list.
           </p>
           <p class="option-days">101</p>
+          <div id="enter-second" class="enter-pledge">
+            <hr class="pledge-divider" />
+            <p class="pledge-text">Enter your pledge</p>
+            <div class="pledge-buttons">
+              <button class="pledge-amount">
+                <span>$</span><input type="number" value="25" min="25" />
+              </button>
+              <button class="pledge-continue">Continue</button>
+            </div>
+          </div>
         </div>
-        <div class="option-card">
+        <div id="third-pledge" class="option-card">
           <div class="pledge-radio">
             <label class="special-radio">
               <input
                 class="default-radio"
                 id="option-3"
                 name="pledge-options"
-                value="option-3"
                 type="radio"
               />
               <span class="custom-radio"></span>
@@ -218,8 +239,18 @@
             included.
           </p>
           <p class="option-days">64</p>
+          <div id="enter-third" class="enter-pledge">
+            <hr class="pledge-divider" />
+            <p class="pledge-text">Enter your pledge</p>
+            <div class="pledge-buttons">
+              <button class="pledge-amount">
+                <span>$</span><input type="number" value="75" min="75" />
+              </button>
+              <button class="pledge-continue">Continue</button>
+            </div>
+          </div>
         </div>
-        <div class="option-card" style="opacity: 0.4">
+        <div id="fourth-pledge" class="option-card" style="opacity: 0.4">
           <h5 class="option-title">Mahogany Special Edition</h5>
           <p class="option-pledge">Pledge $200 or more</p>
           <p class="option-text">

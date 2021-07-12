@@ -215,6 +215,7 @@ body {
   padding: 20px;
   text-align: left;
   background: white;
+  overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
 }
 
@@ -348,4 +349,78 @@ body {
   height: 10px;
   border-radius: 50%;
   background: var(--moderate-cyan);
+}
+
+.enter-pledge {
+  display: none;
+}
+
+.show-pledge {
+  display: block;
+}
+
+.pledge-divider {
+  width: 200%;
+  margin: 30px -20px;
+  border-bottom: none;
+  border: 0.8px solid rgba(182, 180, 180, 0.445);
+}
+
+.pledge-text {
+  font-size: 13px;
+  color: var(--dark-gray);
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.pledge-buttons {
+  width: 100%;
+  display: flex;
+  gap: 1.2em;
+  justify-content: center;
+}
+
+.pledge-amount {
+  display: flex;
+  justify-content: center;
+  height: 45px;
+  width: 80px;
+  border-radius: 25px;
+  background-color: transparent;
+  border: 1px solid var(--dark-gray);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.pledge-amount span {
+  color: var(--dark-gray);
+  opacity: 0.5;
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 0.95em;
+}
+
+.pledge-amount input {
+  width: 45px;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.8em;
+}
+
+.pledge-continue {
+  height: 45px;
+  width: 120px;
+  border-radius: 25px;
+  border: none;
+  background-color: var(--moderate-cyan);
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.highlight {
+  border: 2px solid var(--moderate-cyan);
 }
