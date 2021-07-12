@@ -146,6 +146,25 @@ body {
   font-weight: 600;
   font-size: 15px;
   cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.back-button:hover {
+  background: var(--dark-cyan);
+}
+
+.project-bookmark {
+  cursor: pointer;
+}
+
+.bookmark-circle {
+  fill: var(--dark-cyan);
+  transition: all 0.2s ease-out;
+}
+
+.bookmark-path {
+  fill: white;
+  transition: all 0.2s ease-out;
 }
 
 .backers-card {
@@ -419,6 +438,12 @@ body {
   color: white;
   font-size: 14px;
   font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.pledge-continue:hover {
+  background: var(--dark-cyan);
 }
 
 .highlight {

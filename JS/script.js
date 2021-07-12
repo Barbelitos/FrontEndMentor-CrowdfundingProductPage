@@ -1,3 +1,4 @@
+// Navigation Menu
 var menuToggler = document.querySelector(".menu-toggler");
 var menuClose = document.querySelector(".menu-close");
 var navMenu = document.querySelector(".navbar-menu");
@@ -16,6 +17,16 @@ menuClose.addEventListener("click", () => {
   menuClose.style.display = "none";
   darkness.style.display = "none";
 });
+
+//Bookmark
+var bookmark = document.querySelector(".project-bookmark");
+var bookmarkCircle = document.getElementById("svg-circle");
+var bookmarkPath = document.getElementById("svg-path");
+
+bookmark.onclick = () => {
+  bookmarkCircle.classList.toggle("bookmark-circle");
+  bookmarkPath.classList.toggle("bookmark-path");
+};
 
 // Modals
 var backModal = document.getElementById("back-modal");
@@ -36,8 +47,7 @@ window.onclick = (event) => {
   }
 };
 
-/* Enter pledge */
-enterFirst = document.getElementById("enter-first");
+var enterFirst = document.getElementById("enter-first");
 var enterSecond = document.getElementById("enter-second");
 var enterThird = document.getElementById("enter-third");
 
@@ -45,10 +55,12 @@ var firstPledge = document.getElementById("first-pledge");
 var secondPledge = document.getElementById("second-pledge");
 var thirdPledge = document.getElementById("third-pledge");
 
+// Radio Buttons
 var radioCheck1 = document.getElementById("option-1");
 var radioCheck2 = document.getElementById("option-2");
 var radioCheck3 = document.getElementById("option-3");
 
+// Click radio buttons
 radioCheck1.onclick = () => {
   firstPledge.classList.add("highlight");
   enterFirst.classList.add("show-pledge");
@@ -64,6 +76,7 @@ radioCheck3.onclick = () => {
   enterThird.classList.add("show-pledge");
 };
 
+// Click outside the pledge cards
 document.addEventListener("click", (event) => {
   var firstCard = firstPledge.contains(event.target);
   var secondCard = secondPledge.contains(event.target);
