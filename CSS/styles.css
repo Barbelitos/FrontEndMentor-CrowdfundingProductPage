@@ -449,3 +449,31 @@ body {
 .highlight {
   border: 2px solid var(--moderate-cyan);
 }
+
+/* Success Modal */
+.success-content {
+  width: 90%;
+  display: none;
+  margin: auto;
+  text-align: center;
+}
+
+.success-title {
+  margin-top: 20px;
+}
+
+.success-ok {
+  background: var(--moderate-cyan);
+  color: white;
+  height: 35px;
+  width: 70px;
+  border-radius: 25px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.success-ok:hover {
+  background: var(--dark-cyan);
+}

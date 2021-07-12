@@ -29,12 +29,15 @@ bookmark.onclick = () => {
 };
 
 // Modals
+
+//Selection Modal
 var backModal = document.getElementById("back-modal");
 var backModalOpen = document.querySelector(".back-button");
 var closeModal = document.querySelector(".close-modal");
 
 backModalOpen.onclick = () => {
   backModal.style.display = "block";
+  backContent.style.display = "block";
 };
 
 closeModal.onclick = () => {
@@ -44,6 +47,8 @@ closeModal.onclick = () => {
 window.onclick = (event) => {
   if (event.target == backModal) {
     backModal.style.display = "none";
+    backContent.style.display = "none";
+    successContent.style.display = "none";
   }
 };
 
@@ -99,3 +104,23 @@ document.addEventListener("click", (event) => {
     radioCheck3.checked = false;
   }
 });
+
+// Success Modal
+var successContent = document.querySelector(".success-content");
+var backContent = document.querySelector(".back-content");
+
+var pledgeButton = document.querySelectorAll(".pledge-continue");
+for (var i = 0; i < pledgeButton.length; i++) {
+  pledgeButton[i].onclick = () => {
+    successContent.style.display = "block";
+    backContent.style.display = "none";
+  };
+}
+
+var successButton = document.querySelector(".success-ok");
+
+successButton.onclick = () => {
+  backModal.style.display = "none";
+  backContent.style.display = "none";
+  successContent.style.display = "none";
+};
