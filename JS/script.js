@@ -22,10 +22,17 @@ menuClose.addEventListener("click", () => {
 var bookmark = document.querySelector(".project-bookmark");
 var bookmarkCircle = document.getElementById("svg-circle");
 var bookmarkPath = document.getElementById("svg-path");
+var bookmarkPage = document.querySelector(".bookmark-page");
 
 bookmark.onclick = () => {
   bookmarkCircle.classList.toggle("bookmark-circle");
   bookmarkPath.classList.toggle("bookmark-path");
+  bookmarkPage.classList.toggle("bookmarked");
+  if (bookmarkPage.innerHTML === "Bookmark") {
+    bookmarkPage.innerHTML = "Bookmarked";
+  } else {
+    bookmarkPage.innerHTML = "Bookmark";
+  }
 };
 
 // Modals

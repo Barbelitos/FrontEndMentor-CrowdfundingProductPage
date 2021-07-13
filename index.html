@@ -65,21 +65,24 @@
         </p>
         <div class="card-buttons">
           <button class="back-button">Back this project</button>
-          <svg
-            class="project-bookmark"
-            width="56"
-            height="56"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <g fill="none" fill-rule="evenodd">
-              <circle id="svg-circle" fill="#2F2F2F" cx="28" cy="28" r="28" />
-              <path
-                id="svg-path"
-                fill="#B1B1B1"
-                d="M23 19v18l5-5.058L33 37V19z"
-              />
-            </g>
-          </svg>
+          <div class="bookmark-icon">
+            <svg
+              class="project-bookmark"
+              width="56"
+              height="56"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g fill="none" fill-rule="evenodd">
+                <circle id="svg-circle" fill="#2F2F2F" cx="28" cy="28" r="28" />
+                <path
+                  id="svg-path"
+                  fill="#B1B1B1"
+                  d="M23 19v18l5-5.058L33 37V19z"
+                />
+              </g>
+            </svg>
+            <div class="bookmark-page">Bookmark</div>
+          </div>
         </div>
       </div>
       <div class="backers-card">
@@ -262,8 +265,10 @@
           </div>
         </div>
         <div id="fourth-pledge" class="option-card" style="opacity: 0.4">
-          <h5 class="option-title">Mahogany Special Edition</h5>
-          <p class="option-pledge">Pledge $200 or more</p>
+          <div class="pledge-info">
+            <h5 class="option-title">Mahogany Special Edition</h5>
+            <p class="option-pledge">Pledge $200 or more</p>
+          </div>
           <p class="option-text">
             You get two Special Edition Mahogany stands, a Backer T-Shirt, and a
             personal thank you. You’ll be added to our Backer member list.
@@ -290,13 +295,6 @@
       </div>
     </div>
 
-    <!-- <div id="success-modal" class="modal"></div> -->
-
-    <!-- Success modal start -->
-
-    <!--  Got it! -->
-
     <script src="JS/script.js"></script>
-    <!-- Success modal end -->
   </body>
 </html>
