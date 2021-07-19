@@ -35,6 +35,17 @@ bookmark.onclick = () => {
   }
 };
 
+bookmarkPage.onclick = () => {
+  bookmarkCircle.classList.toggle("bookmark-circle");
+  bookmarkPath.classList.toggle("bookmark-path");
+  bookmarkPage.classList.toggle("bookmarked");
+  if (bookmarkPage.innerHTML === "Bookmark") {
+    bookmarkPage.innerHTML = "Bookmarked";
+  } else {
+    bookmarkPage.innerHTML = "Bookmark";
+  }
+};
+
 // Modals
 
 //Selection Modal

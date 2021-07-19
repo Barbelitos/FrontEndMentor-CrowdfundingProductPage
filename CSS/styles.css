@@ -65,7 +65,7 @@ body {
   text-decoration: none;
   font-weight: 600;
   color: var(--black);
-  transition: all 0.5s;
+  /* transition: all 0.5s ease-out; */
 }
 
 .navbar-menu hr {
@@ -172,6 +172,7 @@ body {
 
 .bookmark-page {
   display: none;
+  cursor: pointer;
 }
 
 .backers-card {
@@ -245,6 +246,14 @@ body {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
 }
 
+.option-title {
+  cursor: pointer;
+}
+
+.option-title:hover {
+  color: var(--moderate-cyan);
+}
+
 .option-pledge {
   font-size: 13px;
   font-weight: 600;
@@ -282,6 +291,12 @@ body {
   margin-top: 1.8em;
   height: 50px;
   width: 150px;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+.option-reward:hover {
+  background: var(--dark-cyan);
 }
 
 .out-of-stock {
@@ -491,6 +506,48 @@ body {
     background: url(/images/image-hero-desktop.jpg);
   }
 
+  .navbar {
+    padding-top: 3em;
+    padding-left: 3em;
+  }
+
+  .navbar-menu {
+    display: flex;
+    background: transparent;
+    max-height: 100%;
+    position: absolute;
+    justify-content: center;
+    right: 7em;
+    top: 4em;
+  }
+
+  .navbar ul {
+    width: 300px;
+  }
+
+  .navbar-menu a {
+    color: white;
+    padding: 0;
+    width: fit-content;
+    font-weight: 500;
+  }
+
+  .navbar-menu a:hover {
+    font-weight: 700;
+  }
+
+  .navbar-menu hr {
+    display: none;
+  }
+
+  .menu-toggler {
+    display: none;
+  }
+
+  .menu-close {
+    display: none;
+  }
+
   main {
     width: 70%;
     margin: auto;
@@ -532,6 +589,11 @@ body {
     color: var(--dark-cyan);
   }
 
+  .option-reward {
+    float: right;
+    margin-top: -40px;
+  }
+
   .modal-content {
     width: 67%;
   }
@@ -545,18 +607,4 @@ body {
   .option-pledge {
     margin-top: 0;
   }
-
-  /* .bookmark-icon::after {
-    content: "Bookmark";
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    position: absolute;
-    background-color: var(--dark-gray);
-    margin-left: -50px;
-    z-index: -100;
-    height: 55px;
-    width: 190px;
-    border-radius: 35px;
-  } */
 }
