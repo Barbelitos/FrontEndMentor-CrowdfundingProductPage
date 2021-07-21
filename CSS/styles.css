@@ -26,7 +26,7 @@ body {
 /* Header and Navigaton */
 
 .page-header {
-  background: url(/images/image-hero-mobile.jpg);
+  background: url(../images/image-hero-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 280px;
@@ -508,7 +508,7 @@ body {
 
 @media only screen and (min-width: 800px) {
   .page-header {
-    background: url(/images/image-hero-desktop.jpg);
+    background: url(../images/image-hero-desktop.jpg);
   }
 
   .navbar {
