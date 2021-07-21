@@ -548,11 +548,11 @@ body {
   }
 
   .menu-toggler {
-    display: none;
+    display: none !important;
   }
 
   .menu-close {
-    display: none;
+    display: none !important;
   }
 
   main {
