@@ -509,6 +509,8 @@ body {
 @media only screen and (min-width: 800px) {
   .page-header {
     background: url(../images/image-hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .navbar {
