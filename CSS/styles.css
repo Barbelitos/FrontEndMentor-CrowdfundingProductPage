@@ -433,6 +433,7 @@ body {
   border: 1px solid var(--dark-gray);
   font-size: 14px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .pledge-amount span {
@@ -450,6 +451,10 @@ body {
   font-weight: 600;
   text-align: center;
   margin-top: 0.8em;
+}
+
+.pledge-amount:hover {
+  border: 1.5px solid var(--moderate-cyan);
 }
 
 .pledge-continue {
@@ -549,7 +554,7 @@ body {
   }
 
   main {
-    width: 70%;
+    width: 65%;
     margin: auto;
   }
 
@@ -595,7 +600,7 @@ body {
   }
 
   .modal-content {
-    width: 67%;
+    width: 60%;
   }
 
   .pledge-info {
@@ -606,5 +611,27 @@ body {
 
   .option-pledge {
     margin-top: 0;
+    float: right;
+  }
+
+  .modal .option-card {
+    position: relative;
+  }
+
+  .modal .option-days {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+  }
+
+  .pledge-text {
+    width: fit-content;
+    float: left;
+    margin-top: 15px;
+  }
+
+  .pledge-buttons {
+    width: fit-content;
+    float: right;
   }
 }
